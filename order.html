@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="фон/Телевиозор.png" type="img-flash-icon">
+</head>
+<body>
+    <header>
+        <h1 align="center">Adпадная компания</h1>
+        <h2 align="center">Ваши ролики увидит весь мир</h2>
+    </header>
+    <nav1>
+        <ul class="complex_list" >
+         <li><a href="index.html"> Главная </a></li>
+         <li class="podmen"><a>Меню</a>
+             <ul>
+             <li><a href="employee.html">Работники</a></li>
+             <li><a href="about.html">О компании</a></li>
+             <li><a href="video.html">Наши работы</a></li>
+             <li><a href="order.html">Прорекламировать себя</a></li>
+             <li><a href="video.html">Советы для начинающих</a></li>
+            </ul>
+         </li>
+         </ul> 
+     </nav1>
+    <div id="main">
+    <article>
+        <center>
+        <h3>Заказать рекламу</h3>
+        <form action="orderup" method="post">
+            <fieldset>
+                <p>Выберите целевую аудиторию</p>
+                <label>
+                    Молодая аудитория
+                    <input type="radio" name="payment_method" value="mol" checked="">
+                </label>
+                <label>
+                    Подростковая аудитория
+                    <input type="radio" name="payment_method" value="opot" checked="">
+                </label>
+                <label>
+                    Взрослая аудитория
+                    <input type="radio" name="payment_method" value="star">
+                </label>
+            </fieldset>
+            <table>
+                <tr>
+                    <td align="right">
+                        <label for="last_name">Название предприятия</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" name="last_name" required placeholder="Введите предприятие" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="first_name">Название ролика</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" name="first_name" required placeholder="Введите название" />
+                    </td>
+                </tr>               
+                <tr>
+                    <td align="right">
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required placeholder="Введите email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="phone">Телефон</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+                    </td>
+                </tr>                
+                <tr>
+                    <td align="right">
+                        <label for="okrug">Канал</label>
+                    </td>
+                    <td>
+                        <select id="okrug" name="okrug" required placeholder="Выберите объект страхования">
+                            <option value="">Канал</option>
+                            <option value="">Пятница</option>
+                            <option value="Центральный">РенТв</option>
+                            <option value="Северо-Западный">Карусель</option>
+                            <option value="Приволжский">Детский мир</option>
+                            <option value="Южный">ТНТ</option>
+                            <option value="Северо-Кавказский">СТС</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Оформляю</td>
+                    <td></td>  <!--  Пустая ячейка, чтобы выравнивание сохранилось -->
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="phone">На время</label>
+                    </td>
+                    <td>
+                        <input type="time" id="phone" name="phone" required placeholder="Введите время" />
+                    </td>
+                </tr>        
+              
+                <tr>
+                    <td align="right">
+                        <label for="Time">На дату</label>
+                    </td>
+                    <td>
+                        <input type="date" id="Time" name="Time" required placeholder="Введите дату" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top" align="right">
+                        <label for="wishes">Пожелания:</label>
+                    </td>
+                    <td>
+                        <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="Подтвердить заказ" />
+                    </td>
+                </tr>
+            </table>    
+        </form>
+    </article>
+</center>
+    <nav><ul class="menu">
+        <li><a href="index.html"> Главная </a></li><br>
+        <li><a>Меню</a>
+            <ul>
+            <li><a href="employee.html">Работники</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="order.html">Прорекламировать себя</a></li> 
+             <li><a href="video.html">Советы для начинающих</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+    <aside></aside>
+    </div>
+    <footer>
+        <a href="#top"class="scroll-to-top" > Наверх</a>   
+        <p><i>©Adски крутые ролики</i></p>
+    </footer>    
+    </body>
+</html>
